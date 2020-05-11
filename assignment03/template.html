@@ -3,7 +3,7 @@
 <ul>
     <li ng-repeat="item in ctrl.foundItems">
         {{item.name}}
-        <button ng-click="ctrl.onRemove({index: $index})">Don't want this one!</button></li>
+        <button class="buttonerr" ng-click="ctrl.onRemove({index: $index})">Don't want this one!</button></li>
 </ul>
 <div ng-if="ctrl.foundItems.length === 0">Nothing found</div>
 </div>
