@@ -5,6 +5,20 @@ input[type="text"] {
   width: 200px;
   float: left;
 }
+
+.buttonerr {
+  background-color: #f44336;; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .narrow-button {
   float: left;
   margin-left: 10px;
