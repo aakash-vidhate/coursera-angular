@@ -3,7 +3,17 @@
 <ul>
     <li ng-repeat="item in ctrl.foundItems">
         {{item.name}}
-        <button class="buttonerr" ng-click="ctrl.onRemove({index: $index})">Don't want this one!</button></li>
+        <button style="
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;" ng-click="ctrl.onRemove({index: $index})">Don't want this one!</button></li>
 </ul>
 <div ng-if="ctrl.foundItems.length === 0">Nothing found</div>
 </div>
