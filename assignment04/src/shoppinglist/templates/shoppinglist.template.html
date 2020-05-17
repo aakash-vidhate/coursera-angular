@@ -1,0 +1,17 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items" ui-sref="categoriesdet({shortName: item.short_name})" >
+  <!-- <a ui-sref="categoriesdet({shortName: item.short_name})">  {{ item.name }}</a> -->
+  {{ item.name }}
+  </li>
+</ul>
+<!-- <h1>
+	All categories
+	<a ui-sref="home">back to homepage</a>
+</h1>
+<ul>
+  <li ng-repeat="category in categories.items">
+  	<a ui-sref="items({categoryName: category.short_name})">
+    	{{ category.name }}
+    </a>
+  </li>
+</ul> -->
