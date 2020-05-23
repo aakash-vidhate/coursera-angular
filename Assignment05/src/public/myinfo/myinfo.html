@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/public.css">
+<div class="container">
+  <h4 style="color:white;" ng-if="myinfor.signedUp">
+  FirstName:{{myinfor.user.firstname}}<br><br>
+  Last Name:{{myinfor.user.lastname}}<br><br>
+  Email Id:{{myinfor.user.email}}<br><br>
+  favourite dish:{{myinfor.user.favoriteDishDetails.name}}<br><br>
+  <!-- <img width="200" height="200" ng-src="images/menu/{{myinfor.user.favoriteDishDetails.short_name}}/{{myinfor.user.favoriteDishDetails.short_name}}.jpg" alt="{{myinfor.user.favoriteDishDetails.name}}"> -->
+  <img class="img-responsive" align="center" width="250" height="150" ng-src="{{myinfor.basePath}}/images/{{myinfor.user.favoriteDishDetails.short_name}}.jpg" alt="{{myinfor.user.favoriteDishDetails.name}}">
+  <div class="menu-item-price">{{myinfor.user.favoriteDishDetails.price_small | currency}}<span> {{myinfor.user.favoriteDishDetails.small_portion_name}}</span> {{myinfor.user.favoriteDishDetails.price_large | currency}} <span>{{myinfor.user.favoriteDishDetails.large_portion_name}}</span></div>
+
+
+  <h3 align="center">{{myinfor.user.favoriteDishDetails.name}}</h3>
+  <p align="center">{{myinfor.user.favoriteDishDetails.description}}</p>
+
+</h4>
+
+  <h4 ng-if="!myinfor.signedUp">You have not signed up yet !! go to <a style="background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;" onMouseOver="this.style.background-color:'#333333'"  ui-sref="public.signup">sign up</a> </h4>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
