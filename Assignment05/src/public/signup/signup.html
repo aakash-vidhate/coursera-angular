@@ -21,10 +21,10 @@
   border: 3px solid black;
 }
 
-.button5:hover {
+/* .button5:hover {
   background-color: black;
   color: white;
-}
+} */
 
 /*--
 Author: W3layouts
@@ -426,11 +426,11 @@ h3 a {
           <div class="icon1">
             <input type="text" name="phone" placeholder="Phone ###-###-####"
               ng-model="reg.user.phone"
-              pattern="^((\+)?(\d{2}[-]))?(\d{10}){1}?$" minlength="10">
+            pattern="(\d{3})-(\d{3})-(\d{4})" minlength="10">
 
           </div>
           <span ng-if="regForm.phone.$invalid && regForm.phone.$touched">
-            Phone number must be exactly 10 digits
+          Phone must be in the format ###-###-####.
           </span>
           <div class="icon1">
             <input type="text" name="menuno" placeholder="enter Menu number"
