@@ -19,8 +19,9 @@ reg.wantitems=RegistrationService.getItems();
     reg.completed = true;
     reg.showError = false;
     reg.showMessage = false;
+    reg.shortn=angular.uppercase(short_name);
     //reg.user.items=RegistrationService.testItems(fname,lname,email,phno,short_name);
-    RegistrationService.testItems(fname,lname,email,phno,short_name).then(function(response) {
+    RegistrationService.testItems(fname,lname,email,phno,reg.shortn).then(function(response) {
                reg.user.favoriteDishDetails = response.data;
                console.log(reg.favoriteDish);
                RegistrationService.savedet(reg.user);
